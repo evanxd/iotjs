@@ -1,6 +1,6 @@
 {
   "source": {
-    "include": "lib/",
+    "include": ["README.md", "lib/"],
     "includePattern": ".+\\.js(doc)?$"
   },
   "templates": {
