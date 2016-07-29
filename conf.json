@@ -4,6 +4,11 @@
     "includePattern": ".+\\.js(doc)?$"
   },
   "templates": {
-    "applicationName": "Thing.js"
+    "applicationName": "Thing.js API Doc",
+    "googleAnalytics": "UA-81619415-1",
+    "meta": {
+      "title": "Thing.js API Doc",
+      "description": "Thing.js API doc."
+    }
   }
 }
