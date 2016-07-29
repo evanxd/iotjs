@@ -1,0 +1,20 @@
+{
+  "name": "thing-js",
+  "description": "A library provides high level APIs to control devices.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Evan Tseng",
+    "email": "evan@tseng.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evanxd/thing-js"
+  },
+  "keywords": [
+    "device",
+    "iot",
+    "linkit",
+    "maker",
+    "raspberry-pi"
+  ]
+}
