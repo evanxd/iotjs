@@ -4,7 +4,7 @@ A framework provides easiest and fastiest way to build devices.
 ## Get Started
 Start to hack to light on an LED on a Raspberry Pi board.
 
-### Include Thing.js framework.
+### Include Thing.js
 ```
 var $ = require('thing-js');
 ```
