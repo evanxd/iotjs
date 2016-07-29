@@ -9,8 +9,8 @@ Start to hack to light on an LED on a Raspberry Pi board.
 var $ = require('thing-js');
 ```
 
-### Define the modules on the board
-Add a new file called `board.json` and add the below JSON object.
+### Define an LED module on the board
+Add a new file called `board.json` and add the below JSON object into it to define the LED on the board.
 ```
 {
   "model": "rpi",
