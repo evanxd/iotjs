@@ -5,13 +5,13 @@ A framework provides easiest and fastiest way to build devices.
 Start to hack to light on an LED on a Raspberry Pi board.
 
 ### Include Thing.js
-```
+```js
 var $ = require('thing-js');
 ```
 
 ### Define an LED module on the board
 Add a new file called `board.json` and add the below JSON object into it to define the LED on the board.
-```
+```json
 {
   "model": "rpi",
   "modules": {
@@ -21,7 +21,7 @@ Add a new file called `board.json` and add the below JSON object into it to defi
 ```
 
 ### Blink an LED
-```
+```js
 $.led.blink(500);
 ```
 
