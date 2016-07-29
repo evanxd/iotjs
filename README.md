@@ -20,9 +20,9 @@ Add a new file called `board.json` and add the below JSON object.
 }
 ```
 
-### Light on an LED
+### Blink an LED
 ```
-$.led.on();
+$.led.blink(500);
 ```
 
 ## API Doc
