@@ -1,2 +1,2 @@
 # Thing.js
-A library provides high level APIs to control devices.
+A framework provides easiest and fastiest way to build devices.
