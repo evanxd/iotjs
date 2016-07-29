@@ -2,5 +2,8 @@
   "source": {
     "include": "lib/",
     "includePattern": ".+\\.js(doc)?$"
+  },
+  "templates": {
+    "applicationName": "Thing.js"
   }
 }
