@@ -15,7 +15,7 @@ Add a new file called `board.json` and add the below JSON object into it to defi
 {
   "model": "rpi",
   "modules": {
-    "led" :   { "module": "LED", "pin": 12 }
+    "led" : { "module": "LED", "pin": 12 }
   }
 }
 ```
