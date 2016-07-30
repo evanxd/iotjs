@@ -16,5 +16,8 @@
     "linkit",
     "maker",
     "raspberry-pi"
-  ]
+  ],
+  "dependencies": {
+    "jaguarjs-jsdoc": "1.0.0"
+  }
 }

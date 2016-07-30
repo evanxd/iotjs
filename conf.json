@@ -10,5 +10,10 @@
       "title": "Thing.js API Doc",
       "description": "Thing.js API doc."
     }
+  },
+  "opts": {
+    "template": "node_modules/jaguarjs-jsdoc",
+    "encoding": "utf8",
+    "destination": "./doc/"
   }
 }
