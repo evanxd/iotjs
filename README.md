@@ -4,13 +4,13 @@ A framework provides easiest and fastiest way to build devices.
 ## Getting Started
 Start to hack to light on an LED on a Raspberry Pi board.
 
-### Install Thing.js
+### 1. Install Thing.js
 ```sh
 npm install thing-js
 ```
 
-### Blink an LED without Code
-Add a new file called `board.json` and add the below JSON object into it to define the LED on the board.
+### 2. Blink an LED without code
+Add a new file `board.json` and add the below JSON object to blink the LED.
 ```json
 {
   "modules": {
@@ -22,8 +22,8 @@ Add a new file called `board.json` and add the below JSON object into it to defi
 }
 ```
 
-### Run
-```
+### 3. Run
+```sh
 ./node_modules/thing-js/thingjs.js
 ```
 
