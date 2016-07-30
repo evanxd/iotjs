@@ -2,8 +2,8 @@
 
 var path = require('path');
 var util = require('./lib/util');
-var parentDir = path.dirname(module.parent.filename);
-var board = require(parentDir + '/board.json');
+// FIXME: Hard code the path of board.json.
+var board = require('../../board.json');
 var thingjs = {};
 
 for (var key in board.modules) {
