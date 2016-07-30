@@ -13,9 +13,8 @@ var $ = require('thing-js');
 Add a new file called `board.json` and add the below JSON object into it to define the LED on the board.
 ```json
 {
-  "model": "rpi",
   "modules": {
-    "led" : { "module": "LED", "pin": 12 }
+    "led" : { "module": "Led", "pins": 44 }
   }
 }
 ```
