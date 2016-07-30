@@ -1,7 +1,7 @@
 {
   "name": "thing-js",
   "description": "A library provides high level APIs to control devices.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": {
     "name": "Evan Tseng",
     "email": "evan@tseng.io"
