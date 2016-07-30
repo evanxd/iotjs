@@ -7,7 +7,7 @@ var board = require(parentDir + '/board.json');
 var thingjs = {};
 
 for (var id in board.modules) {
-  var Module = require('./lib/' + module2fileName(board.modules[id].module));
+  var Module = require('./lib/' + util.module2fileName(board.modules[id].module));
   thingjs[id] = new Module(board.modules[id].pins);
 }
 
