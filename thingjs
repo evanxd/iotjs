@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var util = require('./lib/util');
+var board = require(process.cwd() + '/board.json');
+util.handleBoardJson(board);
