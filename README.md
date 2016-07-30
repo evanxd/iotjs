@@ -2,7 +2,7 @@
 A framework provides easiest and fastiest way to build devices.
 
 ## Getting Started
-Start to hack to light on an LED on a Raspberry Pi board.
+Start to hack to light on an LED on a dev board.
 
 ### 1. Install Thing.js
 ```sh
