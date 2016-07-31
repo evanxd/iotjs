@@ -1,5 +1,5 @@
 # Thing.js
-A framework provides easiest and fastiest way to build devices.
+A framework provides easiest and fastiest way to build open hardware devices.
 
 ## Getting Started
 Start to hack to light on an LED on a dev board.
