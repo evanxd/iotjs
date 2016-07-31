@@ -1,6 +1,6 @@
 {
   "name": "thing-js",
-  "description": "A library provides high level APIs to control devices.",
+  "description": "A framework provides easiest and fastiest way to build devices.",
   "version": "0.0.9",
   "author": {
     "name": "Evan Tseng",
