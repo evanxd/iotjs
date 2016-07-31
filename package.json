@@ -1,7 +1,7 @@
 {
   "name": "thing-js",
   "description": "A framework provides easiest and fastiest way to build devices.",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "author": {
     "name": "Evan Tseng",
     "email": "evan@tseng.io"
