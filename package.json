@@ -18,7 +18,9 @@
     "raspberry-pi"
   ],
   "dependencies": {
-    "jaguarjs-jsdoc": "1.0.0",
     "thingjs-io": "0.0.1"
+  },
+  "devDependencies": {
+    "jaguarjs-jsdoc": "1.0.0"
   }
 }
