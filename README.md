@@ -27,7 +27,7 @@ Add a new file `board.json` and add the below JSON object to blink the LED.
 ./node_modules/thing-js/thingjs
 ```
 
-## API Doc
-Check [here][api-doc] to see the full API document.
+## API Documentation
+Check [here][api-doc] to see the full API documentation.
 
 [api-doc]: https://thing-js.github.io/doc
