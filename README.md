@@ -2,7 +2,7 @@
 This framework provides the easiest and fastest way to develop applications for open hardware devices.
 
 ## Getting Started
-Light the LED on a dev board.
+Blink an LED on a dev board.
 
 ### 1. Install Thing.js
 ```sh
