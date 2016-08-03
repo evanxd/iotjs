@@ -1,5 +1,5 @@
 # Thing.js
-This framework provides the easiest and fastest way to develop applications for open hardware devices.
+An IoT framework provides the fastest and easiest way to develop IoT applications with open hardware devices.
 
 ## Getting Started
 Blink an LED without code.
