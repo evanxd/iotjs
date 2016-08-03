@@ -1,5 +1,5 @@
 # Thing.js
-Thing.js is a framework provides the fastest and easiest way to develop applications with open hardware devices.
+Thing.js is a framework provides the fastest and easiest way to develop applications for open hardware devices.
 
 ## Getting Started
 Blink an LED without code.
