@@ -30,4 +30,10 @@ Add a new file `board.json` and add the below JSON object to blink the LED.
 ## API Documentation
 Check [here][api-doc] to see the full API documentation.
 
+## Supported Boards
+* [Raspberry Pi][rpi]
+* [Linkit Smart 7688 (Duo)][linkit7688]
+
 [api-doc]: https://thing-js.github.io/doc
+[rpi]: https://www.raspberrypi.org
+[linkit7688]: https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/whatis_7688/index.gsp
