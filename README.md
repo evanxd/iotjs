@@ -28,7 +28,7 @@ Add a new file `board.json` and add the below JSON object to blink an LED.
 ```
 
 ## API Documentation
-[Thing.js API documentation][api-doc].
+Check the [API documentation][api-doc] to see how to control hardware modules on a dev board.
 
 ## Supported Boards
 * [Raspberry Pi][rpi]
