@@ -2,14 +2,14 @@
 This framework provides the easiest and fastest way to develop applications for open hardware devices.
 
 ## Getting Started
-Blink an LED on a dev board.
+Blink an LED without code.
 
 ### 1. Install Thing.js
 ```sh
 npm install thing-js
 ```
 
-### 2. Blink an LED without code
+### 2. Setup board.json
 Add a new file `board.json` and add the below JSON object to blink the LED.
 ```json
 {
