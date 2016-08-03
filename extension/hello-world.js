@@ -11,4 +11,3 @@ module.exports = {
     params.modules.blink(params.interval);
   }
 }
-
