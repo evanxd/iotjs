@@ -15,7 +15,8 @@ module.exports = {
       var action = req.query.action || 'blink';
       var apiCall = params.modules[action];
       if (apiCall && typeof apiCall === 'function') {
-        apiCall();
+        // FIXME: Don't know why cannot use apiCall() here.
+        params.modules[action]();
         res.jsonp({ result: 'success', action: action });
       } else {
         res.jsonp({ result: 'failure', message: 'No such action.' });
