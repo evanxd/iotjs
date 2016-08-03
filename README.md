@@ -34,6 +34,9 @@ Check [here][api-doc] to see the full API documentation.
 * [Raspberry Pi][rpi]
 * [Linkit Smart 7688 (Duo)][linkit7688]
 
+## Maintainers
+* [Evan Tseng](http://evanxd.io)
+
 [api-doc]: https://thing-js.github.io/doc
 [rpi]: https://www.raspberrypi.org
 [linkit7688]: https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/whatis_7688/index.gsp
