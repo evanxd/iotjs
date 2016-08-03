@@ -17,7 +17,7 @@ Add a new file `board.json` and add the below JSON object to blink the LED.
     "led" : { "module": "Led", "pins": 44 }
   },
   "extensions": {
-    "hello-world": { "modules": "led" }
+    "blink-led": { "modules": "led" }
   }
 }
 ```
