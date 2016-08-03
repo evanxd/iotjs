@@ -10,7 +10,7 @@ npm install thing-js
 ```
 
 ### 2. Setup board.json
-Add a new file `board.json` and add the below JSON object to blink the LED.
+Add a new file `board.json` and add the below JSON object to blink an LED.
 ```json
 {
   "modules": {
