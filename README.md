@@ -17,14 +17,14 @@ Add a new file `board.json` and add the below JSON object to blink the LED.
     "led" : { "module": "Led", "pins": 44 }
   },
   "extensions": {
-    "thingjs-blink": { "modules": "led", "interval": 500 }
+    "hello-world": { "modules": "led" }
   }
 }
 ```
 
 ### 3. Run
 ```sh
-./node_modules/thing-js/thingjs
+~/path/to/thing-js/thingjs
 ```
 
 ## API Documentation
