@@ -27,9 +27,8 @@ Add a new file `board.json` and add the below JSON object to blink an LED.
 ~/path/to/thing-js/thingjs
 ```
 
-## Supported Modules
-* [Dust Sensor][api-dust-sensor]
-* [LED][api-led]
+## API Documentation
+[Thing.js API documentation][api-doc].
 
 ## Supported Boards
 * [Raspberry Pi][rpi]
@@ -39,7 +38,5 @@ Add a new file `board.json` and add the below JSON object to blink an LED.
 * [Evan Tseng](http://evanxd.io)
 
 [api-doc]: https://thing-js.github.io/doc
-[api-dust-sensor]: https://thing-js.github.io/doc/DustSensor.html
-[api-led]: https://thing-js.github.io/doc/Led.html
 [rpi]: https://www.raspberrypi.org
 [linkit7688]: https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit_smart_7688/whatis_7688/index.gsp
