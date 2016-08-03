@@ -18,6 +18,7 @@
     "raspberry-pi"
   ],
   "dependencies": {
+    "express": "4.14.0",
     "thingjs-io": "evanxd/thingjs-io"
   },
   "devDependencies": {
