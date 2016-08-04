@@ -18,16 +18,28 @@ module.exports = {
           moduleData = data;
         });
         app.get('/modules/' + _module.id, function (req, res) {
-          res.jsonp({ result: 'success', module: _module.module, data: moduleData });
+          res.jsonp({
+            result: 'success',
+            module: _module.module,
+            data: moduleData
+          });
         });
       } else if (_module.type === 'output') {
         app.get('/modules/' + _module.id, function (req, res) {
           var action = req.query.action;
           if (_module[action] && typeof _module[action] === 'function') {
             _module[action].apply(_module, [req.query.params]);
-            res.jsonp({ result: 'success', action: action });
+            res.jsonp({
+              result: 'success',
+              module: _module.module,
+              action: action
+            });
           } else {
-            res.jsonp({ result: 'failure', message: 'No such action.' });
+            res.jsonp({
+              result: 'failure',
+              module: _module.module,
+              message: 'No such action.'
+            });
           }
         });
       } else {
