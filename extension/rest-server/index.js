@@ -11,15 +11,17 @@ module.exports = {
   run: function(params) {
     var app = express();
 
-    modules.forEach(function(_module) {
-      app.get('/modules/' + _module.id, function (req, res) {
-        if (_module.type === 'input') {
-          var moduleData = {};
-          _module.on('data', function(data) {
-            moduleData = data;
-          });
+    params.modules.forEach(function(_module) {
+      if (_module.type === 'input') {
+        var moduleData = {};
+        _module.on('data', function(data) {
+          moduleData = data;
+        });
+        app.get('/modules/' + _module.id, function (req, res) {
           res.jsonp({ result: 'success', module: _module.module, data: moduleData });
-        } else if (_module.type === 'output') {
+        });
+      } else if (_module.type === 'output') {
+        app.get('/modules/' + _module.id, function (req, res) {
           var action = req.query.action;
           if (_module[action] && typeof _module[action] === 'function') {
             _module[action].apply(_module, [req.query.params]);
@@ -27,10 +29,10 @@ module.exports = {
           } else {
             res.jsonp({ result: 'failure', message: 'No such action.' });
           }
-        } else {
-          console.warn('No such module type.');
-        }
-      });
+        });
+      } else {
+        console.warn('No such module type.');
+      }
     });
 
     app.listen(3000, function () {
