@@ -8,6 +8,6 @@ module.exports = {
    * @param {Number} params.interval The blinking rate.
    */
   run: function(params) {
-    params.modules.blink(params.interval);
+    params.modules[0].blink(params.interval);
   }
 }

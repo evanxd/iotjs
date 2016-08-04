@@ -2,7 +2,7 @@
 Thing.js is a framework provides the fastest and easiest way to develop applications for open hardware devices.
 
 ## Getting Started
-Control an LED on a Web page without any JavaScript code.
+Blink an LED without any JavaScript code.
 
 ### 1. Install Thing.js
 ```sh
@@ -17,7 +17,7 @@ Add a new file `board.json` and add the below JSON object.
     "led" : { "module": "Led", "pins": 44 }
   },
   "extensions": {
-    "hello-world": { "modules": "led" }
+    "blink-led": { "modules": "led" }
   }
 }
 ```
