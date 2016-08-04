@@ -11,7 +11,7 @@ module.exports = {
   run: function(params) {
     var app = express();
 
-    app.get('/' + params.modules.module, function (req, res) {
+    app.get('/modules/' + params.modules.id, function (req, res) {
       var action = req.query.action || 'blink';
       var interval = req.query.interval;
       var apiCall = params.modules[action];
