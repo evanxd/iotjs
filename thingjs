@@ -2,4 +2,4 @@
 
 var util = require('./lib/util');
 var board = require(process.cwd() + '/board.json');
-util.handleBoardJson(board);
+util.getModules(board);
