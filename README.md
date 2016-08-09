@@ -17,7 +17,7 @@ Add a new file `board.json` and add the below JSON object.
     "led" : { "module": "Led", "pins": 44 }
   },
   "extensions": {
-    "blink-led": { "modules": "led" }
+    "thingjs-blink": { "modules": "led" }
   }
 }
 ```
