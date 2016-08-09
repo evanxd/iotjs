@@ -8,9 +8,7 @@ module.exports = {
    * @param {Number}    params.interval The blinking rate.
    */
   run: function(params) {
-    var modules = params.modules;
-    modules = Array.isArray(modules) ? modules : [modules];
-    modules.forEach(function(_module) {
+    params.modules.forEach(function(_module) {
       _module.blink(params.interval);
     });
   }
