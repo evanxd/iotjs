@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-var util = require('./lib/util');
+var parser = require('./lib/board-parser');
 var board = require(process.cwd() + '/board.json');
-util.getModules(board);
+parser.getModules(board);
