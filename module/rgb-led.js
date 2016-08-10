@@ -89,9 +89,8 @@ RgbLed.prototype = {
     var dutyCycles = [0, 0, 0];
     if (color.charAt(0) === '#' && color.length === 7) {
       for (var i = 0; i < 3; i++) {
-        var dutyCycle = RgbLed.DEFAULT_PERIOD *
+        dutyCycles[i] = RgbLed.DEFAULT_PERIOD *
           parseInt(color.substr(1 + 2 * i, 2), 16) / 255;
-        dutyCycles[i] = dutyCycle;
       }
     } else {
       console.warn('The color is invalid.');
