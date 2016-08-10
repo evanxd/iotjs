@@ -84,6 +84,7 @@ RgbLed.prototype = {
    * Get duty cycle values of the red, green, and blue LEDs.
    * @param {String} color Color code or name, e.g. #28ABE3.
    * @return {Array} Duty cycle values.
+   * @ignore
    */
   _color2dutyCycles: function(color) {
     var dutyCycles = [0, 0, 0];
