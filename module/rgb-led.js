@@ -39,9 +39,7 @@ RgbLed.prototype = {
       this._green.val(dutyCycles[1], RgbLed.DEFAULT_PERIOD);
       this._blue.val(dutyCycles[2], RgbLed.DEFAULT_PERIOD);
     }
-    this._red.enable();
-    this._green.enable();
-    this._blue.enable();
+    this._enable();
   },
 
   /**
@@ -49,27 +47,25 @@ RgbLed.prototype = {
    */
   off: function () {
     this._timerId && this.stopBlink();
-    this._red.disable();
-    this._green.disable();
-    this._blue.disable();
+    this._disable();
   },
 
   /**
    * Blink the RGB LED.
-   * @param {Number} [interval] The interval of blinking the RGB LED.
    * @param {String} [color] Color code or name.
+   * @param {Number} [interval] The interval of blinking the RGB LED.
    */
-  blink: function (interval, color) {
-    interval = interval || RgbLed.DEFAULT_INTERVAL;
+  blink: function (color, interval) {
     if (color) {
       this.on(color);
       this.color = color;
     }
+    interval = interval || RgbLed.DEFAULT_INTERVAL;
     var isEnable = true;
     this._timerId = setInterval(function() {
-      isEnable ? this.on() : this.off();
+      isEnable ? this._enable() : this._disable();
       isEnable = !isEnable;
-    }, interval);
+    }.bind(this), interval);
   },
 
   /**
@@ -78,6 +74,26 @@ RgbLed.prototype = {
   stopBlink: function() {
     clearInterval(this._timerId);
     this._timerId = 0;
+  },
+
+  /**
+   * Enable the RGB LED.
+   * @ignore
+   */
+  _enable: function() {
+    this._red.enable();
+    this._green.enable();
+    this._blue.enable();
+  },
+
+  /**
+   * Disable the RGB LED.
+   * @ignore
+   */
+  _disable: function() {
+    this._red.disable();
+    this._green.disable();
+    this._blue.disable();
   },
 
   /**
