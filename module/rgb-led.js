@@ -14,7 +14,6 @@ function RgbLed (pins) {
 }
 
 RgbLed.DEFAULT_INTERVAL = 500;
-RgbLed.DEFAULT_PERIOD = 19200000;
 
 RgbLed.prototype = {
   id:       null,
@@ -34,10 +33,10 @@ RgbLed.prototype = {
     this._timerId && this.stopBlink();
     if (color) {
       this.color = color;
-      var dutyCycles = this._color2dutyCycles(color);
-      this._red.val(dutyCycles[0], RgbLed.DEFAULT_PERIOD);
-      this._green.val(dutyCycles[1], RgbLed.DEFAULT_PERIOD);
-      this._blue.val(dutyCycles[2], RgbLed.DEFAULT_PERIOD);
+      var values = this._color2values(color);
+      this._red.val(values[0]);
+      this._green.val(values[1]);
+      this._blue.val(values[2]);
     }
     this._enable();
   },
@@ -97,22 +96,21 @@ RgbLed.prototype = {
   },
 
   /**
-   * Get duty cycle values of the red, green, and blue LEDs.
+   * Get PWM values of the red, green, and blue LEDs.
    * @param {String} color Color code or name, e.g. #28ABE3.
    * @return {Array} Duty cycle values.
    * @ignore
    */
-  _color2dutyCycles: function(color) {
-    var dutyCycles = [0, 0, 0];
+  _color2values: function(color) {
+    var values = [0, 0, 0];
     if (color.charAt(0) === '#' && color.length === 7) {
       for (var i = 0; i < 3; i++) {
-        dutyCycles[i] = Math.floor(RgbLed.DEFAULT_PERIOD *
-          parseInt(color.substr(1 + 2 * i, 2), 16) / 255);
+        values[i] = parseInt(color.substr(1 + 2 * i, 2), 16) / 255;
       }
     } else {
       console.warn('The color is invalid.');
     }
-    return dutyCycles;
+    return values;
   }
 };
 
