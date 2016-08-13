@@ -3,7 +3,7 @@
 var IO = require('thingjs-io');
 
 /**
- * RGB LED module.
+ * Servo module.
  * @constructor
  * @param {Array} pins The pin numbers.
  */
