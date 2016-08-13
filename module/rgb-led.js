@@ -8,9 +8,14 @@ var IO = require('thingjs-io');
  * @param {Array} pins The pin numbers.
  */
 function RgbLed (pins) {
-  this._red =   new IO(pins[0], 'pwm');
-  this._green = new IO(pins[1], 'pwm');
-  this._blue =  new IO(pins[2], 'pwm');
+  var options = {
+    // Default 20ms period(500Hz) is for Linkit 7688.
+    period: 20000000,
+    maxDutyCycle: 2550000
+  };
+  this._red =   new IO(pins[0], 'pwm', options);
+  this._green = new IO(pins[1], 'pwm', options);
+  this._blue =  new IO(pins[2], 'pwm', options);
 }
 
 RgbLed.DEFAULT_INTERVAL = 500;
