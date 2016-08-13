@@ -31,7 +31,7 @@ Servo.prototype = {
    * @return {Number} Current rotation degree.
    */
   rotate: function(degree) {
-    if (degree >= 0 && < degree <= Servo.MAX_DEGREE) {
+    if (degree >= 0 && degree <= Servo.MAX_DEGREE) {
       this._servo.val(degree / Servo.MAX_DEGREE);
       this._degree = degree;
     } else if (degree !== undefined) {
