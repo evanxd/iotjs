@@ -11,7 +11,7 @@ function RgbLed (pins) {
   var options = {
     // Default 20ms period(500Hz) is for Linkit 7688.
     period: 20000000,
-    maxDutyCycle: 2550000
+    maxDutyCycle: 20000000
   };
   this._red =   new IO(pins[0], 'pwm', options);
   this._green = new IO(pins[1], 'pwm', options);
