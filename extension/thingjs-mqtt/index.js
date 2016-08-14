@@ -18,7 +18,9 @@ module.exports = {
 
     client.on('connect', function () {
       console.log('Connected wit the MQTT server: ' + mqttServer);
-      params.modules.forEach(function(_module) {
+      var modules = params.modules;
+      modules = Array.isArray(modules) ? modules : [modules];
+      modules.forEach(function(_module) {
         var topic = boardId + '/' + _module.id;
         if (_module.type === 'input') {
           _module.on('data', function(data) {
