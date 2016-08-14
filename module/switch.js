@@ -8,7 +8,7 @@ var IO = require('thingjs-io');
  * @param {Number} pins The pins number.
  */
 function Switch (pins) {
-  this.pin = new IO(pins, 'gpio', 'in');
+  this.pin = new IO(pins, 'gpio', { mode: 'in' });
 }
 
 Switch.prototype = {

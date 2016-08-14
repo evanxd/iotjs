@@ -8,7 +8,7 @@ var IO = require('thingjs-io');
  * @param {Number} pin The pin number.
  */
 function Led (pin) {
-  this.pin = new IO(pin, 'gpio', 'out');
+  this.pin = new IO(pin, 'gpio', { mode: 'out' });
 }
 
 Led.prototype = {
