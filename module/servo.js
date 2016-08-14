@@ -15,6 +15,8 @@ function Servo (pins) {
     minDutyCycle: 500000,
   };
   this._servo = new IO(pins, 'pwm', options);
+  // Rotate to 90 degree at beginning.
+  this.rotate(90);
 }
 
 Servo.MAX_DEGREE = 180;
