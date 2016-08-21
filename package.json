@@ -1,7 +1,7 @@
 {
   "name": "iotjs",
   "description": "An IoT framework provides the easiest and fastest way to develop IoT applications with open hardware.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": {
     "name": "Evan Tseng",
     "email": "evan@tseng.io"
