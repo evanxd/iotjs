@@ -1,12 +1,12 @@
 # IoT.js
-IoT.js is a framework provides the fastest and easiest way to develop applications for open hardware devices.
+IoT.js is an IoT framework provides the easiest and fastest way to develop IoT applications with open hardware.
 
 ## Getting Started
 Blink an LED without any JavaScript code.
 
-### 1. Install Thing.js
+### 1. Install IoT.js
 ```sh
-npm install thing-js
+npm install iotjs
 ```
 
 ### 2. Setup board.json
@@ -24,7 +24,7 @@ Add a new file `board.json` and add the below JSON object.
 
 ### 3. Run
 ```sh
-~/path/to/thing-js/thingjs
+~/path/to/iotjs/iotjs
 ```
 
 ## API Documentation
