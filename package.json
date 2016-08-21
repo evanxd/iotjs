@@ -1,7 +1,7 @@
 {
-  "name": "thing-js",
+  "name": "iotjs",
   "description": "A framework provides easiest and fastiest way to build devices.",
-  "version": "0.0.15",
+  "version": "0.0.3",
   "author": {
     "name": "Evan Tseng",
     "email": "evan@tseng.io"
