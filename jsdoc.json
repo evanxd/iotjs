@@ -4,11 +4,11 @@
     "includePattern": ".+\\.js(doc)?$"
   },
   "templates": {
-    "applicationName": "Thing.js API Doc",
+    "applicationName": "IoT.js Module Doc",
     "googleAnalytics": "UA-81619415-1",
     "meta": {
-      "title": "Thing.js API Doc",
-      "description": "Thing.js API doc."
+      "title": "IoT.js Module Doc",
+      "description": "IoT.js module doc."
     }
   },
   "opts": {
