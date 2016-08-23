@@ -17,6 +17,9 @@
     "maker",
     "raspberry-pi"
   ],
+  "bin": {
+    "iotjs": "./bin/iotjs.js"
+  },
   "dependencies": {
     "express": "4.14.0",
     "mqtt": "1.13.0",
