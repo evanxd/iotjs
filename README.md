@@ -6,7 +6,7 @@ Blink an LED without any JavaScript code.
 
 ### 1. Install IoT.js
 ```sh
-npm install iotjs
+npm install -g iotjs
 ```
 
 ### 2. Setup board.json
@@ -24,7 +24,7 @@ Add a new file `board.json` and add the below JSON object.
 
 ### 3. Run
 ```sh
-~/path/to/iotjs/iotjs
+iotjs
 ```
 
 ## API Documentation
