@@ -1,10 +1,11 @@
 'use strict';
 
-var parser = require('./lib/board-parser');
+var parser = require('./lib/device-parser');
 var path = require('path');
 var parentDir = path.dirname(module.parent.filename);
-var board = require(parentDir + '/board.json');
-var modules = parser.parse(board);
+// Parse the `device.json` file by default.
+var device = require(parentDir + '/device.json');
+var modules = parser.parse(device);
 
 module.exports = {
   modules:     modules,

@@ -9,8 +9,8 @@ Blink an LED without any JavaScript code.
 npm install -g iotjs
 ```
 
-### 2. Setup board.json
-Add a new file `board.json` and add the below JSON object.
+### 2. Setup device.json
+Add a new file `device.json` and add the below JSON object.
 ```json
 {
   "modules": {
