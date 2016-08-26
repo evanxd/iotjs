@@ -23,6 +23,7 @@
   "dependencies": {
     "express": "4.14.0",
     "mqtt": "1.13.0",
+    "node-telegram-bot-api": "0.23.3",
     "shortid": "2.2.6",
     "thingjs-io": "evanxd/thingjs-io"
   },

@@ -7,8 +7,9 @@ var board = require(parentDir + '/board.json');
 var modules = parser.parse(board);
 
 module.exports = {
-  modules:    modules,
-  DustSensor: require('./module/dust-sensor'),
-  Led:        require('./module/led'),
-  Switch:     require('./module/switch')
+  modules:     modules,
+  DustSensor:  require('./module/dust-sensor'),
+  Led:         require('./module/led'),
+  Switch:      require('./module/switch'),
+  TelegramBot: require('node-telegram-bot-api')
 };
